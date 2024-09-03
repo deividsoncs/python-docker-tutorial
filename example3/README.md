@@ -48,18 +48,18 @@ Host in Dockerfile must be:
 
 `host: 0.0.0.0`: "placeholder", it tells a server to listen for and accept connections from any IP address ("all IPv4 addresses on the local machine").
 
-## 4. Run your container AS a WORKSPACE, files relationed by  docker VOLUME in your Local Computer Directory (HOST) to the CONTAINER:
+## 4. Run your container as Workspace Develpment: 
+In this way your source-codes files will be relationed by docker a volume in your local computer directory (HOST) to the CONTAINER:
 ```console
-docker run -p 80:80 -v ${PWD}/src:/opt/app/src --name fastapi-container-dvd -d fastapi-image-dvd
+$ docker run -p 8000:8000 -v ${pwd}:/opt/app/src --name fastapi-container-dvd -d fastapi-workspace-dvd
 ```
-Know ./src directory in docker container will be sincronyzed with local files, where possible you have a git repository
+Now the './src' directory in docker container will be sincronyzed with local files, where possible you have a git repository
 Ensure that is running the command above in directory related as ${PWD}
 
 ## 5. Install a Docker Plugin on VSCode, from Microsoft. 
 
-### 5.1 Left Menu Docker Icon >> Containers >> Right click on fastapi-container-dvd >> Click on Attach Visual Studio Code, or use SRC LOCAL to EDIT
+On VSCode left menu Docker icon >> containers >> right click on fastapi-container-dvd >> click on 'Attach Visual Studio' Code, or use SRC LOCAL to EDIT
 
-References:
-https://www.youtube.com/watch?v=0H2miBK_gAk
-https://www.youtube.com/watch?v=3JU7Pjwk4s0&list=LL
-https://github.com/patrickloeber/python-docker-tutorial
+Now you will be able to operarate your VSCode inner the container, press CTRL + ' to open terminal, and observe that you will be in the container file directory.
+
+On stop container your /src/* files will be in 

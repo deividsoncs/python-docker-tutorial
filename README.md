@@ -9,7 +9,7 @@ Accompanying repo to my talks at the Docker Community All Hands:
 This talk contains two examples:
 - [Example 1: Dockerize a Python script](/example1/)
 - [Example 2: Dockerize a web app](/example2/)
-- [Example 3: Use a Docker as Workspace (Calixto)](/example3/)
+- [Example 3: Use a Docker as Workspace](/example3/)
 
  [![Alt text](https://img.youtube.com/vi/0UG2x2iWerk/hqdefault.jpg)](https://youtu.be/0UG2x2iWerk)
 
